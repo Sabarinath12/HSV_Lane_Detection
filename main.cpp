@@ -32,7 +32,7 @@ int main() {
     VideoCapture cap(videoPath);
 
     if (!cap.isOpened()) {
-        cout << "❌ Failed to open video." << endl;
+        cout << "Failed to open video." << endl;
         return -1;
     }
     double fps = cap.get(CAP_PROP_FPS);
